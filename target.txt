@@ -1,0 +1,221 @@
+12-Week ML/DL/LLM Intensive Study Plan
+
+This 12-week roadmap (4 hours per day) is designed to strengthen coding (DSA), system design, and deep learning/LLM skills for top-tier ML roles. Each week allocates daily time to all three areas (roughly 1 h DSA, 1 h System Design, 2 h DL/LLM), with specific tasks and projects. Key resources are cited for guidance
+designgurus.io
+huggingface.co
+.
+
+Daily Schedule (example): Spend ~1 h on algorithm practice (LeetCode/DSA); 1 h on system design theory or case studies; 2 h on deep learning/LLM topics (courses, labs, or projects). Adjust as needed, but balance all three pillars every day to reinforce learning.
+Week 1 (Setup and Fundamentals)
+
+    DSA (Arrays & Strings): Review array/string basics and two-pointer techniques. Solve several easy/medium problems on LeetCode (e.g. array sum, reverse string) to build fluency
+    designgurus.io
+    . Aim for clear understanding of indexing, slicing, and simple loops.
+
+    System Design (Basics): Learn core concepts: client-server model, APIs, HTTP, and Big-O/scale basics. Read articles or watch lectures on scalability, vertical vs horizontal scaling, caching and load balancing
+    github.com
+    . Sketch a simple web service architecture (e.g. a REST API).
+
+    DL/LLM (Math & Python): Brush up linear algebra (vectors, matrices) and Python (NumPy) basics. Start a neural networks intro (e.g. perceptron, activation functions). Use a primer like 3Blue1Brown’s NN series or Coursera’s Deep Learning course
+    huggingface.co
+    .
+
+    Project Idea: Pick a simple Kaggle dataset (e.g. Titanic) and practice loading data with Python. No need to model yet – ensure toolchains (Jupyter/Colab, GitHub) are set up.
+
+Week 2 (DSA, System Concepts, Intro ML)
+
+    DSA (Linked Lists, Stacks/Queues): Study linked lists (operations, recursion) and stacks/queues. Solve problems like “reverse linked list”, “implement queue with stacks”. Focus on understanding pointer manipulation and recurrence depth.
+
+    System Design (Networking & Components): Learn about DNS, CDNs, and basic load balancers. Read about load balancing and database sharding
+    designgurus.io
+    github.com
+    . Example: draw how you would scale a simple URL shortener service (load balancer + cache + DB).
+
+    DL/LLM (Neural Nets & Regression): Implement a basic logistic regression or feedforward NN on toy data. Learn frameworks: follow a PyTorch/TensorFlow quickstart (PyTorch tutorials recommended)
+    github.com
+    . Understand forward/backprop intuition.
+
+    Project: Complete a Kaggle “Getting Started” challenge (e.g. Titanic or House Prices). Build a simple model (logistic regression or NN) in Python, tracking performance. Document code on GitHub.
+
+Week 3 (Trees & Recursion, Databases, CNNs)
+
+    DSA (Trees & Recursion): Study binary trees, BSTs, and tree traversals. Solve 3–5 LeetCode problems on tree traversal and recursion. Practice writing recursive functions with memoization. Key topics: binary search in sorted arrays/trees, recursion backtracking
+    designgurus.io
+    .
+
+    System Design (Databases & Caching): Learn how databases scale: replication (master/slave), caching (Redis/Memcached), and SQL vs NoSQL trade-offs. Sketch a high-level design for a “URL shortener” with a cache and database sharding. Resource: Designing Data-Intensive Applications (Kleppmann) overview
+    designgurus.io
+    .
+
+    DL/LLM (CNNs): Cover Convolutional Neural Networks: read CS231n lecture notes or a CNN tutorial. Practice building a CNN (e.g. on MNIST) in PyTorch/Keras. Understand convolution, pooling, and how CNNs differ from MLPs.
+
+    Project: Train a simple CNN classifier on MNIST or Fashion-MNIST. Experiment with layer depth and activation functions. Aim to reach >90% accuracy and document lessons learned.
+
+Week 4 (Graphs & DP, Microservices, NLP Basics)
+
+    DSA (Graphs & Algorithms): Study graph representations, BFS/DFS, and shortest paths (Dijkstra). Practice 2–3 problems on graph traversal and simple dynamic programming (e.g. knapsack, fibonacci with memo). Depth: know when to use DFS/BFS and basic DP recursion
+    designgurus.io
+    .
+
+    System Design (Microservices & Messaging): Learn microservices principles and messaging queues (Kafka/RabbitMQ). Understand the role of publish/subscribe, asynchronous processing, and service discovery. Sketch a design for a chat application (API endpoints, message broker, database).
+
+    DL/LLM (Transformer Intro): Begin Transformers: read about Attention, the Transformer architecture, and introduction to BERT/GPT. Resource: Stanford CS224N lectures or HuggingFace course. Familiarize with tokenizer, embeddings, self-attention
+    web.stanford.edu
+    .
+
+    Project: Fine-tune a small BERT model (via Hugging Face) on a classification task (e.g. sentiment analysis on IMDB reviews). Use the HF Trainer API to speed up training
+    huggingface.co
+    . Aim to achieve reasonable accuracy and learn the workflow (data tokenization, training loop).
+
+Week 5 (Hashing & Sets, System APIs, RAG Concepts)
+
+    DSA (Hash Tables & Sorting): Cover hash maps/sets and common sort/search algorithms. Do practice problems on “two-sum”, “group anagrams”, etc. Also review binary search and quicksort basics.
+
+    System Design (API Design & Scaling): Focus on designing scalable APIs: rate limiting, gateways, versioning. Study how to scale reads (read replicas) and writes (sharding). Example: design a high-throughput search API (consider caching and pagination).
+
+    DL/LLM (RAG and LangChain): Learn Retrieval-Augmented Generation (RAG): how to index documents into vectors and retrieve relevant context. Read LangChain tutorials on RAG
+    python.langchain.com
+    . Topics: embeddings, vector stores (e.g. Pinecone, FAISS) and retrievers.
+
+    Project: Build a basic RAG pipeline: choose a text corpus (e.g. Wikipedia subset), split into chunks, embed them, store in a vector database. Then, using Hugging Face or OpenAI API, retrieve relevant chunks for queries and generate answers. Tools: LangChain or Hugging Face + a vector DB.
+
+Week 6 (Advanced DP, Caching & Front-end Scalability, Prompt Engineering)
+
+    DSA (Advanced Dynamic Programming): Tackle harder DP and backtracking problems (e.g. subset sum, word break, combinations). Focus on state formulation and optimizing recursion. Solve at least 2 medium DP problems on LeetCode.
+
+    System Design (Caching & API Scaling): Deep dive caching strategies (write-through vs write-back), CDN usage, and load balancer algorithms (round-robin, least connections). Study a case: design a photo-sharing service (think CDN for static images, cache hot data).
+
+    DL/LLM (Prompt Engineering & Agents): Study prompt engineering best practices (from Full Stack DL bootcamp
+    fullstackdeeplearning.com
+    ). Learn to use and chain LLMs via tools like LangChain agents. Try simple multi-step tasks with a prompt template. Resources: Full Stack Bootcamp or HuggingFace docs.
+
+    Project: Develop an LLM-powered agent using LangChain: for example, an “email summarizer” that retrieves a set of emails (simulated data) and outputs a summary. Incorporate embeddings for retrieval and use an LLM to generate the summary.
+
+Week 7 (Backtracking, Vector Stores, Distributed Training Basics)
+
+    DSA (Backtracking & Bit Manipulation): Solve backtracking problems (e.g. permutations, Sudoku) and review bitwise operations (bit masks, shifts). This refines problem-solving flexibility.
+
+    System Design (Vector Search & Data Stores): Explore vector databases more: how to scale, replicate, and partition vector stores
+    neptune.ai
+    . Also cover data streaming (Kafka) and consistency models (eventual vs strong consistency).
+
+    DL/LLM (Distributed Training): Learn about multi-GPU training: data parallelism (PyTorch DDP, Horovod) vs model parallelism. Read NVIDIA or PyTorch docs on distributed training. Optionally try a small DDP example or use Google Colab’s TPU.
+
+    Project: Join a Kaggle competition or mimic one: use a public dataset (e.g. text or image) and try to improve accuracy by experimenting with larger models or data augmentation. Document workflow and results.
+
+Week 8 (Complex Systems, Model Serving, MLOps)
+
+    DSA (Practicing Mocks): Attempt a timed LeetCode contest (approx. 2 problems in 2–3 hours). Review solutions. Identify weak spots (e.g. greedy or graph) and revisit them.
+
+    System Design (End-to-End Architecture): Practice designing a complete system (e.g. video streaming platform): include user service, content distribution network, databases, load balancers, cache layers. Emphasize trade-offs (cost vs latency) and security considerations (authentication, rate limits).
+
+    DL/LLM (Model Serving): Learn model deployment: TorchServe for PyTorch
+    pytorch.org
+    and NVIDIA Triton for optimized serving
+    developer.nvidia.com
+    . Try deploying a trained model (e.g. the BERT model from Week 4) as an API (TorchServe or FastAPI), or experiment with Triton Server.
+
+    Project: Containerize and serve one of your DL models via an API. For example, package your sentiment model from Week 4 and expose a REST endpoint that returns predictions. Alternatively, deploy a vision model using Triton Inference Server.
+
+Week 9 (Revision & Interview Prep 1)
+
+    DSA (Review & Advanced Problems): Revise all key topics. Focus on any weak areas (e.g. recursion, DP). Solve 4–5 medium/hard problems over the week, including one graph/DP. Continue LeetCode practice daily.
+
+    System Design (Review & Full Systems): Review all system components studied. Study a system design case study (e.g. design YouTube or e-commerce checkout). Emphasize diagramming and clear requirement analysis.
+
+    DL/LLM (Fine-tuning & Quantization): Learn fine-tuning techniques and lightweight tuning (LoRA/PEFT) for LLMs. Study model quantization (int8/4-bit) to optimize models
+    medium.com
+    . Experiment by quantizing a small model and measuring accuracy drop.
+
+    Mock Interviews: Begin mock technical interviews: use platforms like Pramp or peers. Practice coding problems in a timed setting. For system design, outline answers to common questions and draw on a whiteboard or digital tool. Iterate on feedback.
+
+    Project: Finalize one major project (e.g. LLM chatbot with LangChain and retrieval) and polish write-up. Ensure code is clean and documented, as interviewers may ask about projects.
+
+Week 10 (Revision & Interview Prep 2)
+
+    DSA (Final Problem Sets): Continue daily coding: target at least one new LeetCode medium problem and one review problem. Time yourself to simulate interview conditions. Review high-frequency patterns (two pointers, sliding window, tree recursion)
+    designgurus.io
+    .
+
+    System Design (Mock Designs): Do at least 2 mock design interviews (with friends or mentors). Outline architecture, discuss trade-offs, and solicit critiques. Practice clearly explaining decisions (scalability vs complexity)
+    finalroundai.com
+    finalroundai.com
+    .
+
+    DL/LLM (System Design for ML Ops): Learn about full ML pipelines: data versioning, model monitoring, CI/CD for models (Full Stack DL Labs on MLOps). Ensure you can discuss how to deploy an LLM at scale (version control, A/B testing).
+
+    Quantization & Serving Continued: If not done, finish a mini-experiment on serving an optimized model. For example, compare latency of a float32 model vs int8 quantized model on a GPU.
+
+    Mock Interviews: Expand mock interviews to full rounds (coding + design + behavioral). Use a systematic approach: clarify requirements, discuss scale, outline design (mention caching, databases, etc.)
+    finalroundai.com
+    finalroundai.com
+    . Reflect on feedback each time.
+
+Week 11 (Final Review & Practice)
+
+    DSA (Consolidation): Review notes and cheat-sheets for all DSA topics. Do a full mock test (2–3 problems in 90 min). Focus on articulating thought process clearly. Continue pattern review (sliding window, DP, graphs).
+
+    System Design (Review): Rapidly recap core principles: CAP theorem, sharding, microservices, messaging queues. Make sure you can sketch a generic web service (load balancer, cache, DB).
+
+    DL/LLM (Deep Dive Topics): Be prepared to discuss any DL/LLM concept: attention, beam search, supervised vs reinforcement fine-tuning, etc. Review major papers/tools (e.g. ChatGPT architecture, LangChain agents). Ensure familiarity with Hugging Face ecosystem.
+
+    Project Wrap-up: Present your top 2 projects as if to an interviewer: what problem they solve, your approach, results, and learnings. Practice elevator pitches for them. Update GitHub README and your portfolio with highlights.
+
+    Mock Interviews: Schedule at least 2 full mock rounds per week (coding+design). Record or note performance. Use feedback to refine communication and time management. Revisit any stumbling blocks immediately.
+
+Week 12 (Mock Interviews & Transition)
+
+    DSA (Final Mocks & Strengths): Continue solving one timed set of problems each day. Focus on speed with accuracy. Review any last-minute topics and be comfortable with common patterns.
+
+    System Design (Final Mocks & Presentation): Perform final mock design interviews. Practice explaining designs without diagrams if needed (word-picture explanation). Emphasize clarity and confidence.
+
+    DL/LLM (Discussion Prep): Be ready to discuss your DL/ML decisions: choice of model architectures, handling overfitting, deployment strategy, etc. Prepare to answer LLM-specific questions like “how would you fine-tune an LLM on small data?” or “optimize an LLM for low-latency serving (quantization, distillation)
+    medium.com
+    .”
+
+    Interview Strategy: In the last week, shift focus mostly to practicing interviews in realistic conditions. Study company-specific info if applying to Google/Meta/etc. Rehearse behavioral answers and ensure your resume/projects clearly align with ML/LLM roles.
+
+    Celebrate & Reflect: By now you’ve built a solid foundation. Congratulate yourself for consistent effort. Use any remaining time to relax before interviews, keeping fundamentals fresh.
+
+Recommended Resources (cited)
+
+    DSA Practice: LeetCode (wide range of problems)
+    designgurus.io
+    , GeeksforGeeks interview sheets, Cracking the Coding Interview. Focus topics: arrays, strings, linked lists, stacks/queues, trees, graphs, hash tables
+    designgurus.io
+    ; algorithms: sorting, searching, recursion, dynamic programming
+    designgurus.io
+    .
+
+    System Design: Designing Data-Intensive Applications (Kleppmann)
+    designgurus.io
+    ; System Design Primer GitHub for core topics: scalability, load balancing, caching, database replication/partitioning
+    github.com
+    ; Grokking the System Design Interview (DesignGurus) for guided examples.
+
+    DL/LLM Courses: Hugging Face “Transformers” course (fine-tuning, Trainer API)
+    huggingface.co
+    ; Stanford CS224N (NLP with DL/LLMs)
+    web.stanford.edu
+    ; Full Stack Deep Learning (UC Berkeley) for end-to-end AI production
+    fullstackdeeplearning.com
+    fullstackdeeplearning.com
+    ; LangChain docs and tutorials (RAG, agents)
+    python.langchain.com
+    neptune.ai
+    .
+
+    Serving/Optimization: PyTorch TorchServe docs (serving PyTorch models)
+    pytorch.org
+    ; NVIDIA Triton Server (model deployment at scale)
+    developer.nvidia.com
+    ; study quantization basics
+    medium.com
+    and distillation techniques.
+
+    Mock Interviews: Use platforms like Pramp, Interviewing.io, or peer mock sessions. Focus on articulating your thought process. As studies show, active practice in timed settings and mock discussions greatly improve readiness
+    finalroundai.com
+    finalroundai.com
+    . Solicit feedback on both code and design answers.
+
+Each week’s tasks build cumulatively. Stay consistent, adjust pacing as needed, and integrate learning by doing small projects. Good luck!

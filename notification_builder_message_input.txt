@@ -1,0 +1,6 @@
+email::System update completed successfully.
+sms::Low disk space warning.
+slack::Deployment succeeded at 10:45 PM.
+email::Password reset requested.
+sms::Your OTP is 123456.
+slack::Server restarted by admin.

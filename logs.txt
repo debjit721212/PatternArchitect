@@ -1,0 +1,3 @@
+loglevel -> INFO  the message is ----> timestamp: 2025-05-04 14:51:44.115449  message: Starting application... 
+loglevel -> ERROR  the message is ----> timestamp: 2025-05-04 14:51:44.115480  message: User not found! 
+loglevel -> WARNING  the message is ----> timestamp: 2025-05-04 14:51:44.115487  message: Disk space running low 
