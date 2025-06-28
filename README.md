@@ -1,4 +1,4 @@
-# 🧠 PatternArchitect: A Hands-On Design Pattern Hub in Python
+#  🧠 PatternArchitect: A Hands-On Design Pattern Hub in Python
 
 Welcome to **PatternArchitect** — a curated collection of real-world, high-quality **software design patterns** implemented in Python.
 
